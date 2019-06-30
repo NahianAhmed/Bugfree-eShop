@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\DB;
 //home
 
 Route::get('/', 'HomeController@index');
+Route::get('/about-us', 'HomeController@AboutUs');
+Route::get('/contact-with-us', 'HomeController@ContactUs');
 
 //Auth
 Route::get('/login', 'AuthController@index');

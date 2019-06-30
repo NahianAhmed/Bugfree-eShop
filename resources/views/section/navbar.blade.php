@@ -22,13 +22,13 @@
 														
 													</li>
                                                     <li class="dropdown">
-														<a class="dropdown-item active" href="{{url('/')}}">
+														<a class="dropdown-item active" href="{{url('/about-us')}}">
 															About Us
 														</a>
 														
 													</li>
                                                     <li class="dropdown">
-														<a class="dropdown-item active" href="{{url('/')}}">
+														<a class="dropdown-item active" href="{{url('/contact-with-us')}}">
 															Contact
 														</a>
 														
