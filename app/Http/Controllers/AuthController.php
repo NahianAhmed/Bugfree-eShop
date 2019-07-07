@@ -27,7 +27,7 @@ class AuthController extends Controller
                 elseif($user_type=='2' || $user_type=='3'){
                     return redirect('/user-dashbord');
                 }
-            
+
        }
        else{
            return back()->with('msg','Wrong Password');
@@ -38,16 +38,14 @@ class AuthController extends Controller
         return back()->with('msg','Wrong Email');
        }
 
-
-      
-   }
+}
 
 
 public function Logout(){
     Session()->forget('UserSession');
     Session()->forget('User_email');
     Session()->forget('UserType');
-    
+
     return redirect('/');
 }
 

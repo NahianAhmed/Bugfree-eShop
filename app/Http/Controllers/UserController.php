@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function __construct() {
+        $this->middleware('IsUser');
+    }
+
     public function index(){
-        return "hello user";
+        return view('user.index');
     }
 }
